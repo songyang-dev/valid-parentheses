@@ -7,5 +7,15 @@ public class App {
 
     public static void main(String[] args) {
 
+        // receive input
+        Preprocessor preprocessor = new Preprocessor();
+        String preprocessed = preprocessor.preprocess(args[0]);
+        System.out.println("Supplied string is " + args[0]);
+        System.out.println("Preprocessed (brackets only) result: " + preprocessed);
+
+        // compute answer
+        Validator validator = new Validator();
+        boolean isValidParentheses = validator.isValid(preprocessed);
+        System.out.println("String is " + (isValidParentheses ? "valid" : "invalid"));
     }
 }
