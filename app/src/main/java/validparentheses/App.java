@@ -12,6 +12,9 @@ public class App {
      */
     public static void main(String[] args) {
 
+        if (args.length == 0)
+            throw new IllegalArgumentException("No supplied string to validate.");
+
         // receive input
         Preprocessor preprocessor = new Preprocessor();
         String preprocessed = preprocessor.preprocess(args[0]);
