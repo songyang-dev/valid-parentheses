@@ -4,7 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+/**
+ * Class containing the validation logic for bracket closure
+ */
 public class Validator {
+
+  /**
+   * Checks whether the bracket-only string is valid. Validity is determined by
+   * looking at whether the brackets are closed properly.
+   * 
+   * @param stringToValidate Bracket-only string
+   * @return Whether the given string has valid parenthesis construction
+   */
   public boolean isValid(String stringToValidate) {
 
     // Implementing the pseudocode in the README.md file.
