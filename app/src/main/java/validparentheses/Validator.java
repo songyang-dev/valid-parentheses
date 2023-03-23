@@ -51,4 +51,8 @@ public class Validator {
 
     return false;
   }
+
+  private void doNothing() {
+
+  }
 }
