@@ -38,7 +38,7 @@ public class Validator {
 
       // closing bracket cannot be paired
       if (openingBrackets.size() == 0)
-        return false;
+        return true;
 
       char lastOpeningBracket = openingBrackets.pop();
       if (lastOpeningBracket != closingBracketToOpening.get(character))
